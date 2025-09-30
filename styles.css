@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #e6f1ff;
+  background-color: #0a192f;
+}
+
+header {
+  background-color: #112240;
+  color: #e6f1ff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #64ffda;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item + .nav-item {
+  margin-left: 1.5rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #e6f1ff;
+  position: relative;
+  font-size: 1.05rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #64ffda;
+  transform: scale(1.1);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #64ffda;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.section {
+  padding: 4rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #64ffda;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.hero {
+  background-color: #0a192f;
+  color: #e6f1ff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #64ffda;
+  box-shadow: 0 0 20px rgba(100, 255, 218, 0.6);
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+}
+
+.hero h1 span {
+  color: #1e90ff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #64ffda, #1e90ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.socials {
+  margin-top: 1rem;
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #112240;
+  border: 1px solid #64ffda;
+  color: #64ffda;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.socials a:hover {
+  background-color: #64ffda;
+  color: #0a192f;
+  transform: scale(1.15);
+}
+
+.experience .exp-item {
+  margin-bottom: 2rem;
+}
+
+.experience .exp-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+  color: #e6f1ff;
+}
+
+.experience .exp-item span {
+  color: #8892b0;
+  font-size: 0.9rem;
+}
+
+.experience .exp-item ul {
+  list-style: disc inside;
+  margin-top: 0.5rem;
+}
+
+.project-card {
+  display: block;
+  background-color: #112240;
+  color: #e6f1ff;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card h3,
+.project-card p {
+  margin: 0 0 10px;
+  color: inherit;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(100, 255, 218, 0.4);
+}
+
+.cert-table,
+.cert-table th,
+.cert-table td {
+  border: 1px solid #233554;
+}
+
+.cert-table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #112240;
+  color: #e6f1ff;
+}
+
+.cert-table th,
+.cert-table td {
+  padding: 0.75rem;
+  text-align: left;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.act {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.act-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #112240;
+  border-radius: 12px;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  color: #e6f1ff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(100, 255, 218, 0.4);
+}
+
+.contact p i {
+  color: #64ffda;
+  margin-right: 8px;
+}
+
+.contact .socials a {
+  margin: 8px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
